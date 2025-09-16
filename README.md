@@ -81,47 +81,66 @@ results = model.predict('path/to/test/images')
 
 ```
 
-## 🔄 Data Processing Pipeline
-
+🔄 Data Processing Pipeline
 The project includes a comprehensive data preprocessing pipeline:
 
-1. **Data Extraction:** Unzip and organize spine image dataset
-2. **Format Conversion:** Convert bounding box coordinates to YOLO format
-3. **Normalization:** Standardize coordinates to [0,1] range
-4. **Dataset Split:** 80% training, 20% validation
-5. **Quality Assurance:** Validate all annotations and image integrity
+Data Extraction: Unzip and organize spine image dataset
+Format Conversion: Convert bounding box coordinates to YOLO format
+Normalization: Standardize coordinates to [0,1] range
+Dataset Split: 80% training, 20% validation
+Quality Assurance: Validate all annotations and image integrity
 
-## 📊 Model Training Process
+📊 Model Training Process
+Training Configuration:
 
-**Training Configuration:**
-- Optimizer: AdamW with automatic mixed precision
-- Learning Rate: Adaptive scheduling
-- Batch Size: Optimized for GPU memory
-- Data Augmentation: Built-in YOLO augmentations
-- Loss Functions: Box loss, Classification loss, DFL loss
+Optimizer: AdamW with automatic mixed precision
+Learning Rate: Adaptive scheduling
+Batch Size: Optimized for GPU memory
+Data Augmentation: Built-in YOLO augmentations
+Loss Functions: Box loss, Classification loss, DFL loss
 
-**Training Progression:**
-- Epochs 1-50: Initial convergence
-- Epochs 51-80: Fine-tuning and optimization  
-- Epochs 81-100: Final refinement and validation
+Training Progression:
 
-## 🎯 Results & Evaluation
+Epochs 1-50: Initial convergence
+Epochs 51-80: Fine-tuning and optimization
+Epochs 81-100: Final refinement and validation
 
-### Confusion Matrix
-The model achieves excellent classification performance with minimal false positives:
-- **True Positives:** 1,416 dendritic spines correctly detected
-- **False Negatives:** 77 spines missed
-- **False Positive Rate:** < 5%
+🎯 Results & Evaluation
+Confusion Matrix Performance:
 
-### Performance Visualization
-Training curves show smooth convergence across all loss metrics:
-- Box Loss: Steady decrease to 1.24
-- Classification Loss: Converged to 0.87  
-- DFL Loss: Optimized to 1.06
+True Positives: 1,416 dendritic spines correctly detected
+False Negatives: 77 spines missed
+False Positive Rate: < 5%
 
+Training Curve Analysis:
 
+Box Loss: Steady decrease to 1.24
+Classification Loss: Converged to 0.87
+DFL Loss: Optimized to 1.06
 
-## 📄 License
+🔮 Applications & Impact
+Research Applications:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Automated neuron morphology analysis
+High-throughput spine density studies
+Longitudinal spine tracking experiments
+Drug efficacy testing in neurological research
+
+Technical Advantages:
+
+Real-time processing capability
+Scalable to large datasets
+Integration-ready for research pipelines
+Minimal manual annotation required
+
+🚀 Future Enhancements
+
+ Multi-class spine type classification
+ 3D volume processing capabilities
+ Real-time microscope integration
+ Web-based annotation interface
+ Model compression for edge deployment
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
