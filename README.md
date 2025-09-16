@@ -80,7 +80,6 @@ results = model.predict('path/to/test/images')
 
 
 ```
-
 🔄 Data Processing Pipeline
 The project includes a comprehensive data preprocessing pipeline:
 
