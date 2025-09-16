@@ -76,6 +76,9 @@ model = YOLO('path/to/best.pt')
 
 # Run inference
 results = model.predict('path/to/test/images')
+
+# Or for a single image
+results = model.predict('sample_image.jpg')
 ```
 
 
